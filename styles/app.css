@@ -1,3 +1,5 @@
+/*round image, max width container, max width margin,*/
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -6,29 +8,28 @@ body {
 header {
   background-color: tomato;
   padding: 1rem;
-
-
 }
-a {
 
+a {
   font-size: 2rem;
   text-decoration: none;
 
   color: antiquewhite;
-
 }
 
 ul {
   padding-left: 0;
   list-style: none;
+  margin: 0;
 }
 
-img {
-  height: 5rem;
-  float: left;
-  padding: .5rem;
+img {}
 
+
+* {
+  box-sizing: border-box;
 }
+
 .nav-right {
   float: right;
 }
@@ -46,13 +47,17 @@ img {
  padding: 2rem;
 
 }
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
 
 .grid-item {
   float: left;
-  width: calc(100%/3 - 1rem - 1rem);
+  width: calc(100%/3 - 1rem);
   border-style: solid;
   border-width: 0.125rem;
-  border-color: purple;
+  border-color: black;
   margin: 0.5rem;
 
 
@@ -60,8 +65,8 @@ img {
 }
 
 .grid-item h2 {
-  font-family: cursive;
-  color: purple;
+  font-family: sans-serif;;
+  color: black;
   font-size: 2rem;
   margin: 0;
 
@@ -69,13 +74,45 @@ img {
 }
 .grid-item h5 {
   margin-top: 0;
-  color: purple;
+  color: black;
 
 }
 
 
 
-.grid-item li {
-  border-top: .025rem purple solid;
+.repo {
+  border-top: .025rem black solid;
+  overflow: auto;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+}
 
+.repo-name {
+  float: left;
+}
+
+.repo-language {
+  float: right;
+}
+
+.user-info {
+  overflow:auto;
+}
+
+.repo-dot {
+  display: inline-block;
+  height: .5rem;
+  width: .5rem;
+  background: magenta;
+  border-radius: 50%;
+}
+
+.repo-dot--html {
+  background: red;
+}
+
+.image {
+  height: 5rem;
+  float: left;
+  padding: .5rem;
+  border-radius: 0.8rem;
 }
