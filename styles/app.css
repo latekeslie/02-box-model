@@ -22,6 +22,13 @@ ul {
   padding-left: 0;
   list-style: none;
 }
+
+img {
+  height: 7rem;
+  float: left;
+  padding: 1rem;
+
+}
 .nav-right {
   float: right;
 }
@@ -29,5 +36,19 @@ ul {
 .nav-right a {
   margin: 1rem;
   font-size: 1.5rem;
+
+}
+
+.wrapper {
+ overflow: auto;
+ background-color: lightblue;
+
+ padding: 2rem;
+
+}
+
+.grid-item {
+  float: left;
+  width: calc(100%/3 - 1rem - 1rem);
 
 }
