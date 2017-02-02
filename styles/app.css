@@ -32,11 +32,13 @@ img {}
 
 .nav-right {
   float: right;
+  margin: 0 -1rem 0 0;
 }
 
 .nav-right a {
   margin: 1rem;
   font-size: 1.5rem;
+
 
 }
 
